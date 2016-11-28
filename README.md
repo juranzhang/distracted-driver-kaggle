@@ -12,12 +12,23 @@
 
 
 ## GoogLeNet
+#### Print model architecture
 `python /home/juran/caffe/python/draw_net.py /home/juran/distracteddriver/caffe_models/caffe_model_2/caffenet_train_val_2.prototxt /home/juran/distracteddriver/caffe_models/caffe_model_2/caffe_model_2.png`
 
+#### Train
 `/home/juran/caffe/build/tools/caffe train --solver /home/juran/distracteddriver/caffe_models/caffe_model_2/solver_2.prototxt 2>&1 | tee /home/juran/distracteddriver/caffe_models/caffe_model_2/model_2_train.log`
+
+#### Plot learning curve
+`python /home/juran/distracteddriver/code/plot_learning_curve.py /home/juran/distracteddriver/caffe_models/caffe_model_2/model_2_train.log  /home/juran/distracteddriver/caffe_models/caffe_model_2/caffe_model_2_learning_curve.png`
 
 
 ## VGG-16
+#### Print model architecture
 `python /home/juran/caffe/python/draw_net.py /home/juran/distracteddriver/caffe_models/caffe_model_3/caffenet_train_val_3.prototxt /home/juran/distracteddriver/caffe_models/caffe_model_3/caffe_model_3.png`
 
+#### Train
 `/home/juran/caffe/build/tools/caffe train --solver /home/juran/distracteddriver/caffe_models/caffe_model_3/solver_3.prototxt 2>&1 | tee /home/juran/distracteddriver/caffe_models/caffe_model_3/model_3_train.log`
+
+#### Plot learning curve
+`python /home/juran/distracteddriver/code/plot_learning_curve.py /home/juran/distracteddriver/caffe_models/caffe_model_3/model_3_train.log  /home/juran/distracteddriver/caffe_models/caffe_model_3/caffe_model_3_learning_curve.png`
+
