@@ -12,6 +12,10 @@
 
 
 ## GoogLeNet
+lr = 0.005
+TRAIN batch size = 16
+TEST batch size = 50
+iter_size = 8
 #### Print model architecture
 `python /home/juran/caffe/python/draw_net.py /home/juran/distracteddriver/caffe_models/caffe_model_2/caffenet_train_val_2.prototxt /home/juran/distracteddriver/caffe_models/caffe_model_2/caffe_model_2.png`
 
